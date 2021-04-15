@@ -28,7 +28,7 @@ WORKDIR /dist
 RUN cp /build/main .
 
 # Expose the port 8081 which this uses
-EXPOSE 8081/tcp
+EXPOSE 8080/tcp
 
 # Command to run when starting the container. Run the server binary.
 CMD ["/dist/main"]

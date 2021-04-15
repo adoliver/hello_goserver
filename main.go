@@ -20,5 +20,5 @@ func main() {
 		fmt.Fprintf(w, "This is server A")
 	})
 
-	log.Fatal(http.ListenAndServe(":8081", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
