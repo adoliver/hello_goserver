@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-a-deployment
+spec:
+  selector:
+    matchLabels:
+      run: hello-a
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: hello-a
+    spec:
+      containers:
+      - name: hello-a-container
+        image: adoliver/hello-a
+        ports:
+          - containerPort: 8080
